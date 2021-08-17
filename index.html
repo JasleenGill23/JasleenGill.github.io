@@ -1,149 +1,182 @@
-<!--Index page conatins my introduction, navigation to another pages and social media platform links-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Personal Website</title>
-    <script type="text/javascript" src="individual.js"></script>
-    
+    <title>Sheridan Online Clothing Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <script type="text/javascript" src="Wclm.js"></script>
     <style>
-        p,a
-        {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: larger;
-        }
-        
-       
-        .table
-        {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        #tablefrontc1
-        {
-            text-align: center;
-            color:darkgreen;
-            font-weight: bolder;
-            font-style: italic;
-            font-size:x-large;
-        }
-        div
-        {
-            background-color:darkgreen;
-            padding-bottom: 50px;   
-        }
-        img
-        {
-        height: 100px;
-        width: 100px;
-        margin-left: 50px;
-        }
-        .list
-        {
-        list-style: none;
-        float:left;
-        padding-left: 40px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-right: 100px;
-        color: white;
-        }
-        body
-        {
-            background-image: url(background.jpg);
-        }
-        footer
-        {
-        background-color:darkgreen;
-        padding-top: 20px;
-        padding-bottom: 20px;            
-        }
-        .foot
-        {
-        padding-left: 110px;
-        }
-        h1
+
+
+
+style a 
 {
-    color:darkgreen;
-    font-weight: bolder;
-    font-style: italic;
-    font-size: 70px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
 }
-    
-    </style>
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+
+div 
+{
+height: 500px;
+width: 450px;
+text-align: center;
+margin: 50px auto;
+border:2px groove lightblue;
+background: lightblue;
+border-radius: 30px; 
+
+}
+img 
+{
+height: 400px;
+width:400px;
+border:2px;
+border-radius: 30px;
+}
+
+button
+{
+margin:10px;
+height:25px;
+font-size: 20px;
+font-weight: bold;
+}
+button:hover
+{
+    background: aquamarine;
+    color:blue;
+    cursor:pointer;
+}
+        
+</style>
+
+<script>
+    var image=['images/img1.jpg', 'images/img2.jpg', 'images/img3.jpg', 'images/img4.jpg', 'images/img5.jpg', 'images/img6.jpg', 'images/img7.jpg', 'images/img8.jpg', 'images/img9.jpg', 'images/img10.jpg'];
+var size=image.length-1;  
+var img_num=0;  
+var intr;  
+function slide(num)  
+{
+img_num=img_num+num;  
+
+if (img_num>size)  
+{
+img_num=0    
+}
+if (img_num<0)  
+{
+img_num=size;  
+}
+
+document.getElementById("im").src=image[img_num]; 
+
+}
+
+function slideshow() 
+{
+if (!intr)
+{
+intr=setInterval("slide(1)",1000);  
+} 
+}
+
+function stopshow()
+{
+
+ clearInterval(intr);  
+
+}
+</script>
+
 </head>
-
-
 <body>
-    <div>
-        <ul>
-        <a href="index.html" target="_parent" class="nav"><li class="list">Home</li></a>
-        <a href="special Interest1.html" target="_parent" class="nav"><li class="list">Special Interest</li></a>
-        <a href="special interest2.html" target="_parent" class="nav"><li class="list">Special Interest</li></a>
-        <a href="Resume.html" target="_parent" class="nav"><li class="list">Resume</li></a>
-        <a href="Contact.html" target="_parent" class="nav"><li class="list">Contact Me</li></a>
-        <br/><br/><br/>
-        </ul>
-        </div>
+ <section> 
+     <table>   
+         <tr>     
+            <td ><img src="LogoImages/Logo.jpeg" style="height: 200px; width: 200px;padding: 10px;"></td>
+            
+             <td style="width: 1300px;">
+                <a name="top"></a>
+                <nav id="nav">
+                            
+                    <a href="index.html">Home</a> 
+                    <a href="men.html"> Men</a>
+                    <a href="women.html">Women</a>
+                    <a href="shoes.html"> Shoes</a>
+                    <a href="access.html">Accessories </a>
+                    <a href="orders.html"> Orders</a>
+                    <a href="Termscon.html"> Terms and Conditions</a>
+                    <a href="ContactUs.html">Contact Us </a>
+               
+            </td>
+            <td style="width: 60px; padding-left: 10px;">
+               
+                <img src="LogoImages/loginlogo.jpg" style="height: 50px; width: 50px;">
+                <td >
+                    <a name="top"></a>
+                    <nav id="nav">
+                    <a href="Login.html" style=" padding-left: 3px;" >Login/Signup</a>
+                </td>
+                
+            </td>
+            </nav> 
+        </tr>  
+        </table>
+    </section>
 
-    <h1 style="text-align: center; padding-top: 10px">Personal website</h1>
+    <table>
 
-     <table>
-         <tr>
-             <td style="width: 700px; height: 500px;">
-                <p>I am Jasleen Kaur Gill. I am an international student at Sheridan College, Davis Campus, Brampton, Ontario pursuing Information 
-                    Technology support Service Diploma and this is my last semester. I have completed my Seconadary with 80 plus percentage and senior secondary education 
-                    with 70 plus Percentage from Sacred Heart Convent school in India. My major was Mathematics, Physics
-                    and Chemistry.</p>
-                <br/>
-                <p>Table below has more information about me:</p>
-                <table class="table">
-                    <tr class="table" >
-                        <td class="table" id="tablefrontc1">Goal</td>
-                        <td class="table">
-                            <ul><li>Pass out with good marks in Information Technology Support Services Program.</li>
-                                <li>Start Carrer in Field of Technology.</li>
-                            </ul></td>
-                    </tr>
-                    <tr>
-                        <td class="table" id="tablefrontc1">Achievements</td>
-                        <td class="table">  <u>The Achievements mentioned below are of school level:</u>
-                            <ul>
-                                <li>3 price in Tug of war match.</li>
-                                 <li>3 price in Essay Writing Competition</li>
-                                <li>2 price in Drawing Compentition</li></ul>
-                        </td>
-                    </tr>
-                    <tr class="table">
-                        <td class="table" id="tablefrontc1">Hobbies</td>
-                        <td class="table">
-                            <ul>
-                                <li>Reading Punjabi Novels</li>
-                                <li>Travelling</li>
-                                <li>Listening Music</li>
-                                <li>Cooking</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    
-                </table>
-             </td>
-             <td style="height: 500px; width: 450px;">
-                <img src="beautiful_girl_cartoon_character_design_by_longdigital_dbnzhza-pre.jpg"
-               style="width: 400px; height: 400px; border: 5px solid black;" >
-             </td>
-         </tr>
-     </table>
-   
+        <tr>
+            <td>
+                <h1 style="padding: 20px;">Vision</h1>
+                <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;">
+                To bring the latest fashion trends in every student's life by providing <br/> best-valued
+             products and services.</h2><br/><br/>
+            </td>
+        <tr>
+            <td>
+                <p style="color:blue">** To place orders, contact us or fill form in orders page. **</p>
+            </td>
+        </tr>
+        </tr>
   
-    <p style="padding-bottom: 100px;">In this website you will get the chance to know about me!</p>
-
-    <footer> 
-        <a href="https://www.instagram.com/"><img src="instagram-icon.jpg" class="foot"></a>
-        <a href="https://www.facebook.com/" ><img src="facebook.jpg" class="foot"></a>
-        <a href="https://twitter.com/?lang=en-ca" ><img src="twitter.jpg" class="foot"></a>
-        <a href="https://www.snapchat.com/add/Connect%20to%20Snapchat"><img src="snapchat.jpg" class="foot"></a>
+        <tr>
+            <td style="padding-left: 10px; padding-right: 350px;">
+    <div>
+        <h2> New Arrivals </h2>
+        <img src="images/img1.jpg" id="im" /> <br/>
+        <button onclick="slide(1)"> Next </button> 
+        <button onclick="slide(-1)"> Prev</button>
+        <button onclick="slideshow()">Slideshow</button>
+        <button onclick="stopshow()">Pause</button>
+       </div>
+    </tr>
+   </td>
+   <tr>
+       <td>
+         <h3>To provide Sheridan students with the best-valued products on the latest fashion trends of
+            <br/>casual outfits at a reasonable cost through our effective online services and discounts.
+         </h3>
+       </td>
+   </tr>
+    </table>
+    <br/></br>
+    <a href="index.html" target="_parent"><h3  class="backhome">Back to Top Page</h3></a>
+    <br><br/>
+    <hr/>
+    <footer>
+        <h3> Connect with us</h3>
+     <a href ="https://www.instagram.com/" target="_blank"><img src ="FooterImages/Instagram.JPG" class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://www.facebook.com/"target="_blank"><img src ="FooterImages/facebook.jpg"  class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://twitter.com/?lang=en-ca"target="_blank"><img src ="FooterImages/twitter.jpg"  class= "foot" style="margin-left: 170px;"></a>
+     <p style="text-align:right"> © 2020 Sheridan Online clothing Store.</p>
     </footer>
-
 </body>
 </html>

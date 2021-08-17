@@ -1,0 +1,38 @@
+
+form
+    {
+        text-align: center;
+    }
+.form
+    {
+        color: black;
+        font-weight: bold;
+    }
+
+    body
+    {
+        background-image:url(LogoImages/Shopbg.png);
+        background-size:cover;
+        background-blend-mode: darken;
+        background-position-y: 250px;
+        background-position-x: -400px;
+        background-repeat: no-repeat;
+        height: 900px;
+       
+    }
+.text
+{
+    margin-left: 280px;
+    text-align: center;
+    margin-right: 680px;
+}
+
+p
+{
+    font-weight: bold;
+}
+.Registerform
+{
+    display: none;
+}
+

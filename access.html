@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="navstyle.css">
+
+    <style>
+           *
+        {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        .row 
+        {
+          margin-top: 70px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+        
+        .col-1
+        {
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+        .col-1 img
+        {
+            width: 100%;
+
+        }
+        .small-container
+        {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .title
+        {
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+        }
+        .title::after
+        {
+            content:'';
+            background:chocolate;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position:absolute;  
+            bottom: 0;  
+            left: 50%; 
+            transform: translateX(-50%);       
+        }
+        h4
+        {
+            color:#555;
+            font-weight: normal;
+        }
+        .col-1 p
+        {
+            font-size: 14px; 
+        }
+        .col-1:hover
+        {
+            transform:translateY(-5px)
+        }
+    </style>
+</head>
+<body>
+
+    <section> 
+        <table>   
+            <tr>     
+                <td ><img src="LogoImages/Logo.jpeg" style="height: 200px; width: 200px;padding: 10px;border-radius: 30px;"></td>
+               
+                <td style="width: 1300px;">
+                   <a name="top"></a>
+                   <nav id="nav">
+               <a href="index.html">Home</a>
+               <a href="men.html"> Men</a>
+               <a href="women.html">Women</a>
+               <a href="shoes.html"> Shoes</a>
+               <a href="access.html">Accessories </a>
+               <a href="orders.html"> Orders</a>
+               <a href="Termscon.html"> Terms and Conditions</a>
+               <a href="ContactUs.html">Contact Us </a>
+               </td>
+               <td style="width: 60px; padding-left: 10px;">
+                  
+                   <img src="LogoImages/loginlogo.jpg" style="height: 50px; width: 50px; border-radius: 30px;">
+                   <td >
+                       <a name="top"></a>
+                       <nav id="nav">
+                       <a href="Login.html" style=" padding-left: 3px;" >Login/Signup</a>
+                   </td>
+                   
+               </td>
+               </nav> 
+           </tr>  
+           </table>
+       </section>
+    
+    <div class="small-container">
+        <h2 class="title">Accessories </h2>
+        <div class="row">
+            <div class="col-1">
+                <img src="accessimages/im1.webp"  >
+                <h4> Simple Plain Hair Claw </h4>
+                <p>$3.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im2.webp"  >
+                <h4>16pcs Moon Decor Ring</h4>
+                <p>$3.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im3.webp"  >
+                <h4>Pearl Beaded Necklace</h4>
+                <p>$1.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im4.webp"  >
+                <h4>Double Ring Buckle Belt </h4>
+                <p>$10.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im5.webp"  >
+                <h4>Simple Chain Bracelet</h4>
+                <p>$3.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im6.webp"  >
+                <h4>Minimalist Necklace</h4>
+                <p>$4.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im7.webp"  >
+                <h4> Plain Pleated Scrunchie</h4>
+                <p>$5.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im8.webp"  >
+                <h4>Plain Coil Wire Hair Tie</h4>
+                <p>$3.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im9.webp"  >
+                <h4>Heart & Decor Ring 9pcs</h4>
+                <p>$1.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im10.webp"  >
+                <h4>Faux Pearl Necklace</h4>
+                <p>$3.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im11.webp"  >
+                <h4>Large Capacity Backpack</h4>
+                <p>$20.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im12.webp"  >
+                <h4>Minimalist Baseball Cap</h4>
+                <p>$9.00</p>
+            </div>
+        </div>
+    </div>
+    <a href="index.html" target="_parent" ><h3 class="backhome">Back to Home page</h3></a>
+    <br><br/>
+    <hr/>
+    <footer>
+        <h3> Connect with us</h3>
+     <a href ="https://www.instagram.com/" target="_blank"><img src ="FooterImages/Instagram.JPG" class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://www.facebook.com/"target="_blank"><img src ="FooterImages/facebook.jpg"  class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://twitter.com/?lang=en-ca"target="_blank"><img src ="FooterImages/twitter.jpg"  class= "foot" style="margin-left: 170px;"> </a> 
+     <p style="text-align:right"> © 2020 Sheridan Online clothing Store.</p>
+    </footer>
+</body>
+</html>

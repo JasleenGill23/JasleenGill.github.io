@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <title>Shoes</title>
+    <link rel="stylesheet" href="navstyle.css">
+    <style>
+      *
+        {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        .row 
+        {
+          margin-top: 70px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+        
+        .col-1
+        {
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+        .col-1 img
+        {
+            width: 100%;
+
+        }
+        .small-container
+        {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .title
+        {
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+        }
+        .title::after
+        {
+            content:'';
+            background:chocolate;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position:absolute;  
+            bottom: 0;  
+            left: 50%; 
+            transform: translateX(-50%);       
+        }
+       
+        .col-1 p
+        {
+            font-size: 14px; 
+        }
+        .col-1:hover
+        {
+            transform:translateY(-5px)
+        }
+     
+
+    </style>
+</head>
+<body>
+    <section> 
+        <table>   
+            <tr>     
+                <td ><img src="LogoImages/Logo.jpeg" style="height: 200px; width: 200px;padding: 10px;border-radius: 30px;"></td>
+               
+                <td style="width: 1300px;">
+                   <a name="top"></a>
+                   <nav id="nav">
+               <a href="index.html">Home</a>
+               <a href="men.html"> Men</a>
+                <a href="women.html">Women</a>
+               <a href="shoes.html"> Shoes</a>
+               <a href="access.html">Accessories </a>
+               <a href="orders.html"> Orders</a>
+               <a href="Termscon.html"> Terms and Conditions</a>
+               <a href="ContactUs.html">Contact Us </a>
+               </td>
+               <td style="width: 60px; padding-left: 10px;">
+                  
+                   <img src="LogoImages/loginlogo.jpg" style="height: 50px; width: 50px; border-radius: 30px;">
+                   <td >
+                       <a name="top"></a>
+                       <nav id="nav">
+                       <a href="Login.html" style=" padding-left: 3px;" >Login/Signup</a>
+                   </td>
+                   
+               </td>
+               </nav> 
+           </tr>  
+           </table>
+       </section>
+       
+    <div class="small-container">
+        <h2 class="title">Shoes </h2>
+        <div class="row">
+            <div class="col-1">
+                <img src="accessimages/im13.webp"  >
+                <h4> Minimalist Strappy Sandal Mules </h4>
+                <p>$25.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im14.webp"  >
+                <h4>Clear Chunky Heeled Mules</h4>
+                <p>$23.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im15.webp"  >
+                <h4>Lace Up Front Skate Shoes</h4>
+                <p>$30.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im16.webp"  >
+                <h4>Butterfly Embroidery Lace-up Skate </h4>
+                <p>$29.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im17.webp"  >
+                <h4>Graffiti Print Lace Up Front Skate</h4>
+                <p>$28.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im18.webp"  >
+                <h4>Graphic Knit Panel Sneakers</h4>
+                <p>$21.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im19.webp"  >
+                <h4> Lace-up Front knit Running Shoes</h4>
+                <p>$29.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im20.webp"  >
+                <h4>Decor Color Block Sneakers</h4>
+                <p>$21.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im21.webp"  >
+                <h4>Lace-up Front Running Shoes</h4>
+                <p>$27.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im22.webp"  >
+                <h4>Knit Detail Lace-up Shoes</h4>
+                <p>$26.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im23.webp"  >
+                <h4>Breathable Velcro Strap Sneakers</h4>
+                <p>$25.00</p>
+            </div>
+            <div class="col-1">
+                <img src="accessimages/im24.webp"  >
+                <h4>Slip-On Casual Shoes</h4>
+                <p>$23.00</p>
+            </div>
+        </div>
+    </div>
+    <a href="index.html" target="_parent"><h3  class="backhome">Back to Home page</h3></a>
+    <br><br/>
+    <hr/>
+    <footer>
+        <h3> Connect with us</h3>
+     <a href ="https://www.instagram.com/" target="_blank"><img src ="FooterImages/Instagram.JPG" class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://www.facebook.com/"target="_blank"><img src ="FooterImages/facebook.jpg"  class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://twitter.com/?lang=en-ca"target="_blank"><img src ="FooterImages/twitter.jpg"  class= "foot" style="margin-left: 170px;"> </a> 
+     <p style="text-align:right"> © 2020 Sheridan Online clothing Store.</p>
+    </footer>
+</body>
+</html>

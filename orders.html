@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Orders Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <style>
+    </style>
+    <script>
+        function Order()
+        {
+    if (document.getElementById('name').value =="")
+    {
+        alert("All Fields Required!");
+    }
+    else if (document.getElementById('email').value =="")
+    {
+        alert("All Fields Required!");
+    }
+    else if (document.getElementById('product').value =="")
+    {
+        alert("All Fields Required!");
+    }
+
+    else if (document.getElementById('address').value =="")
+    {
+        alert(" All Fields Required!");
+    }
+
+    else
+    {
+        alert("Order Placed. You will recieve a confirmation email soon!!");
+        return false;
+    }
+}
+    </script>
+</head>
+<body>
+
+    <section> 
+        <table>   
+            <tr>     
+                <td ><img src="LogoImages/Logo.jpeg" style="height: 200px; width: 200px;padding: 10px;border-radius: 30px;"></td>
+               
+                <td style="width: 1300px;">
+                   <a name="top"></a>
+                   <nav id="nav">
+               <a href="index.html">Home</a>
+               <a href="men.html"> Men</a>
+                <a href="women.html">Women</a>
+               <a href="shoes.html"> Shoes</a>
+               <a href="access.html">Accessories </a>
+               <a href="orders.html"> Orders</a>
+               <a href="Termscon.html"  style="padding-right: 4px;"> Terms and Conditions</a>
+               <a href="ContactUs.html">Contact Us </a>
+               </td>
+               <td style="width: 60px; padding-left: 10px;">
+                  
+                   <img src="LogoImages/loginlogo.jpg" style="height: 50px; width: 50px; border-radius: 30px;">
+                   <td >
+                       <a name="top"></a>
+                       <nav id="nav">
+                       <a href="Login.html" style=" padding-left: 3px;" >Login/Signup</a>
+                   </td>
+                   
+               </td>
+           </tr>  
+           </table>
+       </section>
+        <h1 class="text">To place orders fill the form or contact us.</h1>
+        <div >
+            <form class="ClForm">
+                    <input type="text" placeholder="Name" class="Oform" id="name"><br/><br/>
+                    <input type="text" placeholder="Email Address" class="Oform" id= "email"><br/><br/>
+                    <label class="Oform">Product with size</label>
+                    <input type="text" name="product" id="product" style="height:40px;"><br/><br/>
+                    <label>Delivery-Address</label>   <br/>
+                    <input type="text" class="Oform" id="address" name="address" style="height:40px;"><br/><br/>
+                   <input type="button" value="Place Order" name="Place order" onclick="return Order()">
+
+                   
+            </form>
+        
+            </div>
+        
+        <br/><br/>
+        <br><br/><br/>
+    <a href="index.html" target="_parent" ><h3 class="backhome">Back to Home page</h3></a>
+    <br><br/>
+    <hr/>
+    <footer>
+        <h3> Connect with us</h3>
+     <a href ="https://www.instagram.com/" target="_blank"><img src ="FooterImages/Instagram.JPG" class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://www.facebook.com/"target="_blank"><img src ="FooterImages/facebook.jpg"  class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://twitter.com/?lang=en-ca"target="_blank"><img src ="FooterImages/twitter.jpg"  class= "foot" style="margin-left: 170px;"> </a> 
+     <p style="text-align:right"> © 2020 Sheridan Online clothing Store.</p>
+    </footer>
+</body>
+</html>

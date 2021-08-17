@@ -1,0 +1,74 @@
+<!--This page has contact details, feedback form and thenfunctions of feedback form are in contact.js file-->
+<!DOCTYPE html>
+<head>
+    <title>Contact Us</title>
+    <script type="text/javascript" src="ContactMe.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <section> 
+        <table>   
+            <tr>     
+                <td ><img src="LogoImages/Logo.jpeg" style="height: 200px; width: 200px;padding: 10px;border-radius: 30px;"></td>
+               
+                <td style="width: 1300px;">
+                   <a name="top"></a>
+                   <nav id="nav">
+               <a href="index.html">Home</a>
+               <a href="men.html"> Men</a>
+            <a href="women.html">Women</a>
+               <a href="shoes.html"> Shoes</a>
+               <a href="access.html">Accessories </a>
+               <a href="orders.html"> Orders</a>
+               <a href="Termscon.html"  style="padding-right: 4px;"> Terms and Conditions</a>
+               <a href="ContactUs.html">Contact Us </a>
+               </td>
+               <td style="width: 60px; padding-left: 10px;">
+                  
+                   <img src="LogoImages/loginlogo.jpg" style="height: 50px; width: 50px; border-radius: 30px;">
+                   <td >
+                       <a name="top"></a>
+                       <nav id="nav">
+                       <a href="Login.html" style=" padding-left: 3px;" >Login/Signup</a>
+                   </td>
+                   
+               </td>
+               </nav> 
+           </tr>  
+           </table>
+       </section>
+    <h1 class="text">Contact Me</h1>
+    <p class="text">Please feel free to contact us at any time!</p>
+    <p class="text">Email: CSOnline@gmail.com</p>
+    <p class="text">Phone Number: +1 (437)999-9999</p>
+    <p class="text">Fax number: 4379999999@CSOnline.com</p>
+    <br/><br/>
+    <p class="text"> Please provide your feedback below!</p>
+
+    <form onsubmit="formSubmitted()" class="ClForm"> 
+        <div>
+             <input type="text" name="email" id="Email" value="" placeholder="Enter your Email address" size="27"><br/>
+             <p id="messagename"></p>
+             <label class="form">Comment</label><br/>
+             <input type="text"  id="comment" name="comment" style="height:40px;"><br/><br/>
+             <label class="form">Rate our website</label><br/>
+             <input type="number" id="rating" name="rating" value="" oninput="rateForm()"><br/><br/>
+             <input type="submit" id="submit" value="Submit" onclick=" return formChecking()">
+        </div>
+    </form>
+    <br><br/>
+    <a href="index.html" target="_parent" ><h3 class="backhome">Back to Home page</h3></a>
+    <footer>
+        <h3> Connect with us</h3>
+     <a href ="https://www.instagram.com/" target="_blank"><img src ="FooterImages/Instagram.JPG" class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://www.facebook.com/"target="_blank"><img src ="FooterImages/facebook.jpg"  class= "foot" style="margin-left: 170px;"></a> 
+     <a href ="https://twitter.com/?lang=en-ca"target="_blank"><img src ="FooterImages/twitter.jpg"  class= "foot" style="margin-left: 170px;"> </a> 
+     <p style="text-align:right"> © 2020 Sheridan Online clothing Store.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <script>
+          
+        function loginPassword()
+        {
+            var a = document.getElementById("pass").value;
+
+            if (a=="")
+            {
+                alert("All fields Required");
+                document.getElementById('pass').style.border = "5px Solid blue";
+                return false;
+            }
+
+
+           else if (a.length <5)
+
+            {
+                alert("Password length must be greater than 5");
+                return false;
+            }
+
+           else if (a.length >5)
+
+            {
+                alert("Password length must be less than 5");
+                return false;
+            }
+
+            else
+            {
+                alert("Login Successful");
+                return false;
+            }
+        }       
+    </script>
+</head>
+<body>
+    <section> 
+        <table>   
+            <tr>     
+                <td ><img src="LogoImages/Logo.jpeg" style="height: 200px; width: 200px;padding: 10px;border-radius: 30px;"></td>
+               
+                <td style="width: 1300px;">
+                   <a name="top"></a>
+                   <nav id="nav">
+               <a href="index.html">Home</a>
+               <a href="men.html"> Men</a>
+                    <a href="women.html">Women</a>
+               <a href="shoes.html"> Shoes</a>
+               <a href="access.html">Accessories </a>
+               <a href="orders.html"> Orders</a>
+               <a href="Termscon.html"  style="padding-right: 4px;"> Terms and Conditions</a>
+               <a href="ContactUs.html">Contact Us </a>
+               </td>
+               <td style="width: 60px; padding-left: 10px;">
+                  
+                   <img src="LogoImages/loginlogo.jpg" style="height: 50px; width: 50px; border-radius: 30px;">
+                   <td >
+                       <a name="top"></a>
+                       <nav id="nav">
+                       <a href="Login.html" style=" padding-left: 3px;" >Login/Signup</a>
+                   </td>
+                   
+               </td>
+               </nav> 
+           </tr>  
+           </table>
+       </section>
+
+    <div>
+    <form   class="ClForm">
+            <label class="form">Email Address</label><br/>
+            <input type="text" maxlength="30"><br/><br/>
+            <label class="form">Password</label><br/>
+            <input type="text" id="pass" maxlength="10"><br/><br/>
+            <input type="button" name="Log In" value="Log In" onclick="return loginPassword()">
+            <p class="login">Don't Have Account? <a href="SignUp.html"><br/>Sign Up</a></p>
+    </form>
+
+    </div>
+</body>
+</html>
